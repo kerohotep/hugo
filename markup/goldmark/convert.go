@@ -34,7 +34,9 @@ import (
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/renderer/html"
 	"github.com/yuin/goldmark/text"
+	// Kerohotep's Fork
 	"go.abhg.dev/goldmark/wikilink"
+	"github.com/mangoumbrella/goldmark-figure"
 )
 
 const (
@@ -183,6 +185,10 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 	
 	if cfg.Extensions.Wikilink {
       		extensions = append(extensions, &wikilink.Extender{},)
+ 	}
+	
+	if cfg.Extensions.Figure {
+      		extensions = append(extensions, figure.Figure,)
  	}
 
 	if pcfg.Conf.EnableEmoji() {
