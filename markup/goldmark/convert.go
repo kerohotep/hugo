@@ -34,6 +34,7 @@ import (
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/renderer/html"
 	"github.com/yuin/goldmark/text"
+	"go.abhg.dev/goldmark/wikilink"
 )
 
 const (
@@ -179,6 +180,10 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 			blockDelimiters,
 		))
 	}
+	
+	if cfg.Extensions.Wikilink {
+      		extensions = append(extensions, &wikilink.Extender{},)
+ 	}
 
 	if pcfg.Conf.EnableEmoji() {
 		extensions = append(extensions, emoji.Emoji)

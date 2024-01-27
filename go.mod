@@ -1,9 +1,10 @@
-module github.com/gohugoio/hugo
+module github.com/kerohotep/hugo
 
 require (
 	github.com/BurntSushi/locker v0.0.0-20171006230638-a6e239ea1c69
+	github.com/PuerkitoBio/purell v1.1.1
 	github.com/alecthomas/chroma/v2 v2.12.0
-	github.com/armon/go-radix v1.0.1-0.20221118154546-54df44f2176c
+	github.com/armon/go-radix v1.0.0
 	github.com/aws/aws-sdk-go v1.48.6
 	github.com/bep/clocks v0.5.0
 	github.com/bep/debounce v1.2.0
@@ -66,6 +67,7 @@ require (
 	github.com/tdewolff/parse/v2 v2.7.8
 	github.com/yuin/goldmark v1.6.0
 	github.com/yuin/goldmark-emoji v1.0.2
+	go.uber.org/atomic v1.11.0
 	go.uber.org/automaxprocs v1.5.3
 	gocloud.dev v0.34.0
 	golang.org/x/exp v0.0.0-20221031165847-c99f073a8326
@@ -92,6 +94,7 @@ require (
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest/to v0.4.0 // indirect
 	github.com/AzureAD/microsoft-authentication-library-for-go v1.0.0 // indirect
+	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.20.0 // indirect
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.4.11 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.18.32 // indirect
@@ -115,6 +118,7 @@ require (
 	github.com/dlclark/regexp2 v1.10.0 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
 	github.com/go-openapi/swag v0.22.4 // indirect
+	github.com/gohugoio/hugo v0.122.0
 	github.com/golang-jwt/jwt/v4 v4.5.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
@@ -139,8 +143,10 @@ require (
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	go.abhg.dev/goldmark/wikilink v0.5.0 
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.18.0 // indirect
+	golang.org/x/mod v0.14.0 // indirect
 	golang.org/x/oauth2 v0.15.0 // indirect
 	golang.org/x/sys v0.16.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
@@ -155,5 +161,7 @@ require (
 	howett.net/plist v1.0.0 // indirect
 	software.sslmate.com/src/go-pkcs12 v0.2.0 // indirect
 )
+
+replace github.com/gohugoio/hugo => ./
 
 go 1.20

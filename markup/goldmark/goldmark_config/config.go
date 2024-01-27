@@ -43,6 +43,7 @@ var Default = Config{
 		Linkify:         true,
 		LinkifyProtocol: "https",
 		TaskList:        true,
+		Wikilink:        true,
 		CJK: CJK{
 			Enable:                   false,
 			EastAsianLineBreaks:      false,
@@ -92,6 +93,8 @@ type Extensions struct {
 	LinkifyProtocol string
 	TaskList        bool
 	CJK             CJK
+	// kerohotep
+	Wikilink        bool
 }
 
 // Typographer holds typographer configuration.
