@@ -37,6 +37,7 @@ import (
 	// Kerohotep's Fork
 	"go.abhg.dev/goldmark/wikilink"
 	"github.com/mangoumbrella/goldmark-figure"
+	"go.abhg.dev/goldmark/hashtag"
 )
 
 const (
@@ -189,6 +190,14 @@ func newMarkdown(pcfg converter.ProviderConfig) goldmark.Markdown {
 	
 	if cfg.Extensions.Figure {
       		extensions = append(extensions, figure.Figure,)
+ 	}
+	
+	if cfg.Extensions.Hashtag.Enable {
+	    if cfg.Extensions.Hashtag.Variant == "ObsidianVariant" {
+      		extensions = append(extensions, &hashtag.Extender{Variant: hashtag.ObsidianVariant,})
+		} else {
+      		extensions = append(extensions, &hashtag.Extender{})
+		}
  	}
 
 	if pcfg.Conf.EnableEmoji() {

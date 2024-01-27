@@ -45,6 +45,10 @@ var Default = Config{
 		TaskList:        true,
 		Wikilink:        true,
 		Figure:          true,
+		Hashtag: Hashtag{
+			Enable:                   false,
+			Variant:                  "DefaultVariant",
+		},
 		CJK: CJK{
 			Enable:                   false,
 			EastAsianLineBreaks:      false,
@@ -97,6 +101,7 @@ type Extensions struct {
 	// kerohotep
 	Wikilink        bool
 	Figure          bool
+	Hashtag         Hashtag
 }
 
 // Typographer holds typographer configuration.
@@ -195,4 +200,11 @@ type ParserAttribute struct {
 	Title bool
 	// Enables custom attributeds for blocks.
 	Block bool
+}
+
+type Hashtag struct {
+	// Enables custom attributes for titles.
+	Enable bool
+	// Enables custom attributeds for blocks.
+	Variant string
 }
