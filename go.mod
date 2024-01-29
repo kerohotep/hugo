@@ -82,6 +82,11 @@ require (
 )
 
 require (
+	github.com/forPelevin/gomoji v1.1.3 // indirect
+	github.com/rivo/uniseg v0.2.0 // indirect
+)
+
+require (
 	cloud.google.com/go v0.110.10 // indirect
 	cloud.google.com/go/compute v1.23.3 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
@@ -135,20 +140,19 @@ require (
 	github.com/kr/pretty v0.3.1 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
+	github.com/mangoumbrella/goldmark-figure v1.0.0
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-runewidth v0.0.9 // indirect
-	github.com/mangoumbrella/goldmark-figure v1.0.0
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
 	github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 // indirect
 	github.com/perimeterx/marshmallow v1.1.5 // indirect
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	go.abhg.dev/goldmark/wikilink v0.5.0
 	go.abhg.dev/goldmark/hashtag v0.3.1
+	go.abhg.dev/goldmark/wikilink v0.5.0
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.18.0 // indirect
-	golang.org/x/mod v0.14.0 // indirect
 	golang.org/x/oauth2 v0.15.0 // indirect
 	golang.org/x/sys v0.16.0 // indirect
 	golang.org/x/time v0.5.0 // indirect
